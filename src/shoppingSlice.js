@@ -15,4 +15,4 @@ const shopping = createSlice({
     }
 });
 
-export default shopping;
+export default shopping.reducer;
