@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Product() {
 
@@ -7,7 +7,7 @@ export default function Product() {
         <>
             <ul>
                 {addProduct.map((add) =>
-                (<li id={add.id}>{add.name}-{add.price}
+                (<li key={add.id} id={add.id}>{add.name}-{add.price}
                     <button onClick={(e) => {
                         alert('상품이 추가 되었습니다.')
                     }}>Add to Cart</button>
