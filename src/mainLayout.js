@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Welcome from "./welcome";
 
 export default function MainLayout(props) {
@@ -9,7 +9,7 @@ export default function MainLayout(props) {
             <Link to='/product'>상품보기</Link>
             <Link to='/shpping_cart'>장바구니</Link>
             <Link to='/payment'>결제금액보기</Link>
-            <Welcome />
+            <Outlet />
         </>
     );
 }
